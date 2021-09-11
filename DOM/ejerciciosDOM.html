@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejercicio DOM</title>
+        <link rel="stylesheet" href="ejerciciosDOM.css">
+    </head>
+    <body>
+        <div>
+            <h1> Ejemplo de div y span </h1>
+            <p>Esto es un párrafo dentro de un div,
+            <span> y esto un span dentro de un párrafo.</span>
+            </p>
+        </div>
+        <!--
+        <script>
+            var div = document.querySelector("div")
+            div.style.height="100px"
+            div.style.width="50%"
+            div.style.backgroundColor="red"
+        </script>
+        -->
+        <script>
+            var div = document.querySelector("div");
+            //div.classList.add("square")
+            setInterval(cambiarSquare, 1000);
+
+            function cambiarSquare() {
+                div.classList.toggle("square");
+            }
+        </script>
+    </body>
+</html>
