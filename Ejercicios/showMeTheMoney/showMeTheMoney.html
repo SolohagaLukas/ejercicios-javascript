@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Show me the money</title>
+        <link rel="stylesheet" href="showMeTheMoney.css">
+    </head>
+    <body>
+        <button id="botonPlata">Show me the Money</button><br>
+        <img id="plata" src="plata.jpg" alt="" height="150" width="300px" class="oculto"><br>
+        <button id="botonMiami">Show me Miami</button><br>
+        <img id="miami" src="miami.jpg" alt="" height="150px" width="300px" class="oculto"><br>
+        <button id="botonRicky">Show me Maiameee</button><br>
+        <img id="ricky" src="ricky.jpg" alt="" height="150px" width="300px" class="oculto">
+
+        <script>
+            document.getElementById("botonPlata").addEventListener("click", function(){
+                document.getElementById("plata").classList.toggle("oculto")
+            })
+            document.getElementById("botonMiami").addEventListener("click", function(){
+                document.getElementById("miami").classList.toggle("oculto")
+            })
+            document.getElementById("botonRicky").addEventListener("click", function(){
+                document.getElementById("ricky").classList.toggle("oculto")
+            })
+
+            var imagenes = document.querySelectorAll("img")
+            for(var i = 0; i < imagenes.length; i++){
+                imagenes[i].addEventListener("click", function(){
+                    this.classList.add("oculto")
+            })
+}
+            
+        </script>
+    </body>
+</html>

@@ -1,0 +1,12 @@
+body {
+    background-color: black;
+}
+
+.oculto {
+    display: none;
+}
+
+#imagen {
+    height: 400px; 
+    width: 750px;
+}

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mouse Tracker</title>
+        <link rel="stylesheet" href="mouseTracker.css">
+    </head>
+    <body>
+        <img src="https://media.giphy.com/media/MtQxKzhytFsmQ/giphy.gif" style="position: fixed;">
+        <script>
+            var imagen = document.querySelector("img")
+
+            document.body.addEventListener("mousemove", function(infoEvento){
+                if (infoEvento.which == true) 
+                    imagen.style.top = infoEvento.clientY + "px", 
+                    imagen.style.left = infoEvento.clientX + "px"
+            })
+        </script>
+    </body>
+</html>
